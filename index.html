@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="stylesheet" href="./assets/css/style.css" >
+    <title>Click Kitty</title>
+  </head>
+  <body>
+    <header>
+      <h1>Click Kitty</h1>
+      <p id="intro">Clique sur Hello Kitty et fais ton plus gros score !</p>
+      <p id="score">Score</p>
+      <p id="temps">Temps</p>
+    </header>
+    <main>
+      <div class="jeu">
+        <img
+          onclick="gagne(this)"
+          id="thomas"
+          src="./assets/images/hello_kitty-removebg-preview.png"
+          alt="thomas"
+        >
+      </div>
+      <div id="rejoue" class="hidden">
+        <button class="bouton" onclick="playAgain()" type="button">
+          Rejouer
+        </button>
+      </div>
+    </main>
+    <footer>©️Amiiraa.13</footer>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

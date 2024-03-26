@@ -1,0 +1,119 @@
+@font-face {
+  font-family: kitty;
+  src: url(../fonts/Boldins.ttf);
+}
+body {
+  background-image: url(../images/baack.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: kitty;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 20px;
+  width: 30%;
+  text-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 1em rgb(255, 255, 255),
+    0 0 0.2em rgb(255, 255, 255);
+  align-items: center;
+
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 15px;
+  font-size: 70px;
+  background-color: transparent;
+}
+
+p {
+  text-align: center;
+  font-size: 45px;
+  width: 20%;
+  background-color: transparent;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 1em rgb(255, 255, 255),
+    0 0 0.2em rgb(255, 255, 255);
+}
+#intro {
+  padding-top: 10%;
+  padding-bottom: 35px;
+  display: flex;
+  width: 50%;
+}
+.jeu {
+  position: relative;
+  border: solid black 4px;
+  border-radius: 50px;
+  width: 500px;
+  height: 500px;
+  margin: auto;
+  background-image: url(../images/yAGONJ.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#thomas {
+  position: absolute;
+  width: 8vw;
+  height: 5vw;
+  left: 50%;
+  top: 50%;
+  transition: 1s;
+}
+.hidden {
+  display: none !important ;
+}
+#rejoue {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+.bouton {
+  background-color: transparent;
+  border-radius: 10px;
+  border: transparent;
+  color: #000000;
+  text-align: center;
+  font-size: 40px;
+  padding: 10px;
+  width: 200px;
+  margin: auto;
+  margin-top: 15px;
+  cursor: pointer;
+  font-family: kitty;
+  text-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 1em rgb(255, 255, 255),
+    0 0 0.2em rgb(255, 255, 255);
+}
+.bouton:hover {
+  color: rgb(185, 127, 203);
+}
+footer {
+  margin-top: 20px;
+}
+
+@media (min-width: 400px) and (max-width: 600px) {
+  .jeu {
+    width: 300px;
+    height: 300px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  p {
+    font-size: 20px;
+  }
+  .bouton {
+    font-size: 20px;
+  }
+}
